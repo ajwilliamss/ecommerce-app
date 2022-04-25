@@ -80,7 +80,10 @@
 
 @media screen and (max-width: 450px) {
   .add-categories-container {
-    margin: 0 1rem;
+    .add-categories-wrapper {
+      width: 325px;
+    }
+
     form {
       flex-direction: column;
       gap: 0 !important;

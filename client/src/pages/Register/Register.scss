@@ -67,3 +67,11 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .register-container {
+    .register-form {
+      width: 325px;
+    }
+  }
+}

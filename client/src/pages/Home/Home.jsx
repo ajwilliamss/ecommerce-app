@@ -161,7 +161,7 @@ const Home = () => {
             </div>
           </section>
           <section className="products-container">
-            {/* Iterate over categories array of objects */}
+            {/* Iterate over slicedProducts array of objects */}
             {slicedProducts.map((product) => {
               return <Product key={product._id} product={product} />;
             })}

@@ -60,3 +60,11 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .login-container {
+    .login-form {
+      width: 325px;
+    }
+  }
+}

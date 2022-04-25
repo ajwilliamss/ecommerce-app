@@ -79,11 +79,13 @@
 }
 
 @media screen and (max-width: 450px) {
-  .manage-product-form {
-    margin: 0 1rem;
+  .create-product-container {
+    .manage-product-form {
+      width: 325px;
 
-    h3 {
-      text-align: center;
+      h3 {
+        text-align: center;
+      }
     }
   }
 }
