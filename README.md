@@ -14,6 +14,8 @@ Once they click pay amount, a success message is displayed and they are redirect
 
 # View the site here:
 
+https://ajecommerce.herokuapp.com/
+
 # Screenshot:
 
 # How to use the application:
