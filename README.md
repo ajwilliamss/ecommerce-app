@@ -18,6 +18,8 @@ https://ajecommerce.herokuapp.com/
 
 # Screenshot:
 
+![ecommerce app](https://github.com/ajwilliamss/ecommerce-app/blob/main/ecommerce.png)
+
 # How to use the application:
 
 - Upon loading the site, you can view the products, log in or register an account.
