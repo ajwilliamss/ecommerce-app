@@ -1,0 +1,72 @@
+@import "../../variables";
+
+.filters-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  .category-group,
+  .sort-by-group,
+  .search-group {
+    label {
+      margin-right: 0.25rem;
+    }
+
+    select,
+    input {
+      font-size: 0.9rem;
+      padding: 0.1rem;
+    }
+  }
+
+  .search-group {
+    display: flex;
+    align-items: center;
+
+    input {
+      border: none;
+      background-color: $primary-colour;
+      padding: 0.2rem;
+      border-radius: $input-radius;
+      margin-left: 0.25rem;
+    }
+  }
+}
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.load-more {
+  text-align: center;
+  margin-top: 1.5rem;
+
+  button {
+    background: $primary-colour;
+    border: none;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: $radius;
+    width: 125px;
+    text-align: center;
+    transition: 0.15s ease-in;
+
+    &:hover {
+      background: $dark-colour;
+      color: $light-colour;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .filters-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

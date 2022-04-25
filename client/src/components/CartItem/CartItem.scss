@@ -1,0 +1,57 @@
+@import "../../variables";
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: $shadow;
+  padding: 0.5rem;
+  gap: 2rem;
+  margin-bottom: 0.75rem;
+
+  .cart-item-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: $radius;
+  }
+
+  .qty {
+    label {
+      margin-right: 0.25rem;
+    }
+
+    input {
+      padding: 0.25rem;
+      border: $border-dark;
+      border-radius: $input-radius;
+      outline: none;
+      font-size: 1rem;
+      width: 75px;
+    }
+  }
+
+  svg {
+    font-size: 1.75rem;
+    color: $delete-colour;
+    margin-right: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .cart-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cart-item {
+    flex-direction: column;
+    width: 275px;
+
+    svg {
+      margin-bottom: 1rem;
+    }
+  }
+}

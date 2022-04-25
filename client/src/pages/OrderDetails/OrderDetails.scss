@@ -1,0 +1,19 @@
+@import "../../variables";
+
+.order-details-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  box-shadow: $shadow;
+  padding: 1rem;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../variables";
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: $primary-colour;
+  box-shadow: $header-shadow;
+}

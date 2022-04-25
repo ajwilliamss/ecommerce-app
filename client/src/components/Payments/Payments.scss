@@ -1,0 +1,70 @@
+@import "../../variables";
+
+.all-payments {
+  h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  table {
+    margin: auto;
+    width: 100%;
+
+    th,
+    tr,
+    td {
+      border: 1px solid #ddd;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      text-align: center;
+      padding: 0.5rem;
+    }
+  }
+
+  button {
+    background: $primary-colour;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: $radius;
+    width: 125px;
+    text-align: center;
+    transition: 0.15s ease-in;
+
+    &:hover {
+      background: $dark-colour;
+      color: $light-colour;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .all-payments {
+    thead,
+    td:nth-child(2) {
+      display: none;
+    }
+
+    tbody,
+    tr,
+    td {
+      display: flex;
+      flex-direction: column;
+    }
+
+    th,
+    td {
+      text-align: end !important;
+    }
+
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 1rem;
+    }
+  }
+}

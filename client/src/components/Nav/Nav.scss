@@ -1,0 +1,49 @@
+@import "../../variables";
+
+.nav {
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .nav-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    .nav-items {
+      display: flex;
+      gap: 1rem;
+
+      .nav-item {
+        a:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .cart-icon {
+      position: relative;
+
+      .shopping-cart {
+        font-size: 2rem;
+      }
+
+      span {
+        background-color: $cart-items;
+        border-radius: 20px;
+        padding: 0.1rem 0.5rem;
+        color: $light-colour;
+        position: absolute;
+        top: -10px;
+        right: -15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav {
+    display: none;
+  }
+}

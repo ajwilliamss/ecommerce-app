@@ -1,0 +1,89 @@
+@import "../../variables";
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 300px;
+  box-shadow: $shadow;
+  padding: 1rem;
+
+  .admin-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.3rem;
+
+    svg {
+      font-size: 1.75rem;
+
+      &:first-child {
+        color: $edit-colour;
+      }
+
+      &:nth-child(2) {
+        color: $delete-colour;
+      }
+    }
+  }
+
+  img {
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: $radius;
+    margin: 0 auto;
+  }
+
+  h3 {
+    text-transform: capitalize;
+  }
+
+  p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .product-btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .purchase-btn {
+      background: $primary-colour;
+      border: none;
+      padding: 0.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: $radius;
+      width: 125px;
+      text-align: center;
+      transition: 0.15s ease-in;
+
+      &:hover {
+        background: $dark-colour;
+        color: $light-colour;
+      }
+    }
+
+    .view-btn {
+      background: $view-colour;
+      color: $light-colour;
+      border: none;
+      padding: 0.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: $radius;
+      width: 125px;
+      text-align: center;
+      transition: 0.15s ease-in;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

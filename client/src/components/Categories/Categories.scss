@@ -1,0 +1,90 @@
+@import "../../variables";
+
+.add-categories-container {
+  display: flex;
+  justify-content: center;
+
+  .add-categories-wrapper {
+    border: $border;
+    border-radius: $radius;
+    margin: 2rem 0;
+    padding: 0.5rem;
+    width: 375px;
+
+    h3 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      input {
+        padding: 0.25rem;
+        border: $border-dark;
+        border-radius: $input-radius;
+        outline: none;
+        font-size: 0.9rem;
+        width: 250px;
+        margin: 1rem 0;
+      }
+
+      button {
+        background: $primary-colour;
+        border: none;
+        padding: 0.25rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: $radius;
+        width: 75px;
+        text-align: center;
+        transition: 0.15s ease-in;
+
+        &:hover {
+          background: $dark-colour;
+          color: $light-colour;
+        }
+      }
+    }
+  }
+
+  .category-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+
+      .category-icons {
+        display: flex;
+        svg {
+          font-size: 1.75rem;
+          margin-left: 0.25rem;
+
+          &:first-child {
+            color: $edit-colour;
+          }
+
+          &:nth-child(2) {
+            color: $delete-colour;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .add-categories-container {
+    margin: 0 1rem;
+    form {
+      flex-direction: column;
+      gap: 0 !important;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

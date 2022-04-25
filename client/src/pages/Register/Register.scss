@@ -1,0 +1,69 @@
+@import "../../variables";
+
+.register-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: $border;
+    border-radius: $radius;
+    width: 375px;
+    padding: 0.5rem;
+
+    label {
+      margin-top: 0.5rem;
+    }
+
+    input {
+      padding: 0.25rem;
+      border: $border-dark;
+      border-radius: $input-radius;
+      outline: none;
+      font-size: 0.9rem;
+      width: 250px;
+    }
+
+    button {
+      background: $primary-colour;
+      border: none;
+      padding: 0.5rem;
+      margin: 1rem 0 0.5rem 0;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: $radius;
+      width: 125px;
+      text-align: center;
+      transition: 0.15s ease-in;
+
+      &:hover {
+        background: $dark-colour;
+        color: $light-colour;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+
+    p {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .login-link {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

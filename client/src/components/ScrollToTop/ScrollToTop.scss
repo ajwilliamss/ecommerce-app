@@ -1,0 +1,29 @@
+@import "../../variables";
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  background: $view-colour;
+  border-radius: 50%;
+  width: 50px;
+
+  svg {
+    font-size: 2.25rem;
+    color: $light-colour;
+    z-index: 999;
+    margin-top: 0.5rem;
+    margin-left: 0.41rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .scroll-to-top {
+    bottom: 25px;
+    right: 25px;
+  }
+}

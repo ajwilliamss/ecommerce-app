@@ -1,0 +1,68 @@
+@import "../../variables";
+
+.cart-heading {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  span {
+    font-size: 1.25rem;
+
+    a {
+      font-weight: bold;
+      color: $edit-colour;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .checkout-section {
+    .checkout-section-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+      box-shadow: $shadow;
+      padding: 0.5rem;
+      font-size: 1.15rem;
+
+      span {
+        font-weight: bold;
+      }
+
+      .checkout-btn {
+        background: $primary-colour;
+        border: none;
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: $radius;
+        text-align: center;
+        transition: 0.15s ease-in;
+
+        &:hover {
+          background: $dark-colour;
+          color: $light-colour;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .cart {
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      text-align: center;
+    }
+  }
+}

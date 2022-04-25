@@ -1,0 +1,89 @@
+@import "../../variables";
+
+.create-product-container {
+  display: flex;
+  justify-content: center;
+
+  .manage-product-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: $border;
+    border-radius: $radius;
+    width: 375px;
+    padding: 0.5rem;
+
+    img {
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: $radius;
+      margin: 1rem 0;
+    }
+
+    svg {
+      font-size: 1.75rem;
+      color: $delete-colour;
+    }
+
+    label {
+      margin-top: 0.5rem;
+    }
+
+    input:nth-child(2) {
+      border: none;
+      margin-top: 0.5rem;
+    }
+
+    input {
+      padding: 0.25rem;
+      border: $border-dark;
+      border-radius: $input-radius;
+      outline: none;
+      font-size: 0.9rem;
+      width: 250px;
+    }
+
+    select {
+      font-size: 0.9rem;
+      padding: 0.1rem;
+    }
+
+    textarea {
+      resize: none;
+      width: 300px;
+      height: 100px;
+      padding: 0.1rem;
+      border: $border-dark;
+      border-radius: $input-radius;
+    }
+
+    button {
+      background: $primary-colour;
+      border: none;
+      padding: 0.5rem;
+      margin: 1rem 0 0.5rem 0;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: $radius;
+      width: 125px;
+      text-align: center;
+      transition: 0.15s ease-in;
+
+      &:hover {
+        background: $dark-colour;
+        color: $light-colour;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .manage-product-form {
+    margin: 0 1rem;
+
+    h3 {
+      text-align: center;
+    }
+  }
+}

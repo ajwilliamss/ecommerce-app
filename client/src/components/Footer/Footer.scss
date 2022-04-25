@@ -1,0 +1,47 @@
+@import "../../variables";
+
+.footer {
+  background-color: $primary-colour;
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem 0;
+    margin: 2rem 1rem 0 1rem;
+
+    a {
+      color: $dark-colour;
+    }
+
+    li {
+      margin-top: 0.5rem;
+    }
+
+    .footer-nav-items a:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    text-align: center;
+
+    .footer-wrapper {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
